@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Banana
   - Lever
+  - Bird
+  - Snail
+  - Path
   layers:
   - Default
   - TransparentFX
