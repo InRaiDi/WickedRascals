@@ -1739,6 +1739,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 650743560}
     m_Modifications:
+    - target: {fileID: 4162168802934010195, guid: 28edb118a37d25f479b73af875cbb59b,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4620371299588776322, guid: 28edb118a37d25f479b73af875cbb59b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1798,6 +1803,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: fruit_banana (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8928438928344876668, guid: 28edb118a37d25f479b73af875cbb59b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Banana
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28edb118a37d25f479b73af875cbb59b, type: 3}
@@ -2414,6 +2424,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 650743560}
     m_Modifications:
+    - target: {fileID: 4162168802934010195, guid: 28edb118a37d25f479b73af875cbb59b,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4620371299588776322, guid: 28edb118a37d25f479b73af875cbb59b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2474,6 +2489,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: fruit_banana (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 8928438928344876668, guid: 28edb118a37d25f479b73af875cbb59b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Banana
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28edb118a37d25f479b73af875cbb59b, type: 3}
 --- !u!4 &219818236 stripped
@@ -2489,6 +2509,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 650743560}
     m_Modifications:
+    - target: {fileID: 4162168802934010195, guid: 28edb118a37d25f479b73af875cbb59b,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4620371299588776322, guid: 28edb118a37d25f479b73af875cbb59b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2548,6 +2573,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: fruit_banana (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8928438928344876668, guid: 28edb118a37d25f479b73af875cbb59b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Banana
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28edb118a37d25f479b73af875cbb59b, type: 3}
@@ -5311,6 +5341,71 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 427748457}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &428999254 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3043078228696575005, guid: fef625773c3f9404195ed3b21e7180f6,
+    type: 3}
+  m_PrefabInstance: {fileID: 3043078228360585953}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &428999255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428999254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee2df08712ca93143b6639aa52105231, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &428999256
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428999254}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 7.213131, y: 6.5}
+    newSize: {x: 7.213131, y: 6.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.213131, y: 6.5}
+  m_EdgeRadius: 0
+--- !u!50 &428999257
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428999254}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1001 &439205341
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7501,6 +7596,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 650743560}
     m_Modifications:
+    - target: {fileID: 4162168802934010195, guid: 28edb118a37d25f479b73af875cbb59b,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4620371299588776322, guid: 28edb118a37d25f479b73af875cbb59b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7560,6 +7660,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: fruit_banana (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8928438928344876668, guid: 28edb118a37d25f479b73af875cbb59b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Banana
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28edb118a37d25f479b73af875cbb59b, type: 3}
@@ -8374,6 +8479,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 650743560}
     m_Modifications:
+    - target: {fileID: 4162168802934010195, guid: 28edb118a37d25f479b73af875cbb59b,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4620371299588776322, guid: 28edb118a37d25f479b73af875cbb59b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8433,6 +8543,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: fruit_banana (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8928438928344876668, guid: 28edb118a37d25f479b73af875cbb59b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Banana
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28edb118a37d25f479b73af875cbb59b, type: 3}
@@ -9848,6 +9963,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 650743560}
     m_Modifications:
+    - target: {fileID: 4162168802934010195, guid: 28edb118a37d25f479b73af875cbb59b,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4620371299588776322, guid: 28edb118a37d25f479b73af875cbb59b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9908,6 +10028,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: fruit_banana (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 8928438928344876668, guid: 28edb118a37d25f479b73af875cbb59b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Banana
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28edb118a37d25f479b73af875cbb59b, type: 3}
 --- !u!4 &877238085 stripped
@@ -9923,6 +10048,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 650743560}
     m_Modifications:
+    - target: {fileID: 4162168802934010195, guid: 28edb118a37d25f479b73af875cbb59b,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4620371299588776322, guid: 28edb118a37d25f479b73af875cbb59b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9982,6 +10112,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: fruit_banana (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8928438928344876668, guid: 28edb118a37d25f479b73af875cbb59b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Banana
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28edb118a37d25f479b73af875cbb59b, type: 3}
@@ -13617,6 +13752,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 650743560}
     m_Modifications:
+    - target: {fileID: 4162168802934010195, guid: 28edb118a37d25f479b73af875cbb59b,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4620371299588776322, guid: 28edb118a37d25f479b73af875cbb59b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13676,6 +13816,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: fruit_banana (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8928438928344876668, guid: 28edb118a37d25f479b73af875cbb59b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Banana
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28edb118a37d25f479b73af875cbb59b, type: 3}
@@ -15042,6 +15187,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 650743560}
     m_Modifications:
+    - target: {fileID: 4162168802934010195, guid: 28edb118a37d25f479b73af875cbb59b,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4620371299588776322, guid: 28edb118a37d25f479b73af875cbb59b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15101,6 +15251,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: fruit_banana (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8928438928344876668, guid: 28edb118a37d25f479b73af875cbb59b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Banana
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28edb118a37d25f479b73af875cbb59b, type: 3}
@@ -16726,6 +16881,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 650743560}
     m_Modifications:
+    - target: {fileID: 4162168802934010195, guid: 28edb118a37d25f479b73af875cbb59b,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4620371299588776322, guid: 28edb118a37d25f479b73af875cbb59b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16785,6 +16945,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: fruit_banana (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8928438928344876668, guid: 28edb118a37d25f479b73af875cbb59b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Banana
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28edb118a37d25f479b73af875cbb59b, type: 3}
@@ -17701,6 +17866,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 650743560}
     m_Modifications:
+    - target: {fileID: 4162168802934010195, guid: 28edb118a37d25f479b73af875cbb59b,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4620371299588776322, guid: 28edb118a37d25f479b73af875cbb59b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17760,6 +17930,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: fruit_banana (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8928438928344876668, guid: 28edb118a37d25f479b73af875cbb59b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Banana
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28edb118a37d25f479b73af875cbb59b, type: 3}
@@ -18462,6 +18637,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 650743560}
     m_Modifications:
+    - target: {fileID: 4162168802934010195, guid: 28edb118a37d25f479b73af875cbb59b,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4620371299588776322, guid: 28edb118a37d25f479b73af875cbb59b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18521,6 +18701,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: fruit_banana (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8928438928344876668, guid: 28edb118a37d25f479b73af875cbb59b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Banana
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28edb118a37d25f479b73af875cbb59b, type: 3}
@@ -19287,6 +19472,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 650743560}
     m_Modifications:
+    - target: {fileID: 4162168802934010195, guid: 28edb118a37d25f479b73af875cbb59b,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4620371299588776322, guid: 28edb118a37d25f479b73af875cbb59b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19346,6 +19536,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: fruit_banana (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8928438928344876668, guid: 28edb118a37d25f479b73af875cbb59b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Banana
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28edb118a37d25f479b73af875cbb59b, type: 3}
@@ -20637,6 +20832,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 650743560}
     m_Modifications:
+    - target: {fileID: 4162168802934010195, guid: 28edb118a37d25f479b73af875cbb59b,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4620371299588776322, guid: 28edb118a37d25f479b73af875cbb59b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20696,6 +20896,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: fruit_banana (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8928438928344876668, guid: 28edb118a37d25f479b73af875cbb59b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Banana
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28edb118a37d25f479b73af875cbb59b, type: 3}
@@ -20862,6 +21067,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 650743560}
     m_Modifications:
+    - target: {fileID: 4162168802934010195, guid: 28edb118a37d25f479b73af875cbb59b,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4620371299588776322, guid: 28edb118a37d25f479b73af875cbb59b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20921,6 +21131,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: fruit_banana (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8928438928344876668, guid: 28edb118a37d25f479b73af875cbb59b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Banana
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28edb118a37d25f479b73af875cbb59b, type: 3}
@@ -21687,6 +21902,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 650743560}
     m_Modifications:
+    - target: {fileID: 4162168802934010195, guid: 28edb118a37d25f479b73af875cbb59b,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4620371299588776322, guid: 28edb118a37d25f479b73af875cbb59b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21746,6 +21966,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: fruit_banana (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8928438928344876668, guid: 28edb118a37d25f479b73af875cbb59b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Banana
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28edb118a37d25f479b73af875cbb59b, type: 3}
@@ -21987,6 +22212,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 650743560}
     m_Modifications:
+    - target: {fileID: 4162168802934010195, guid: 28edb118a37d25f479b73af875cbb59b,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4620371299588776322, guid: 28edb118a37d25f479b73af875cbb59b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22046,6 +22276,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: fruit_banana (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8928438928344876668, guid: 28edb118a37d25f479b73af875cbb59b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Banana
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28edb118a37d25f479b73af875cbb59b, type: 3}
@@ -24606,6 +24841,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 650743560}
     m_Modifications:
+    - target: {fileID: 4162168802934010195, guid: 28edb118a37d25f479b73af875cbb59b,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4620371299588776322, guid: 28edb118a37d25f479b73af875cbb59b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24665,6 +24905,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: fruit_banana
+      objectReference: {fileID: 0}
+    - target: {fileID: 8928438928344876668, guid: 28edb118a37d25f479b73af875cbb59b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Banana
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28edb118a37d25f479b73af875cbb59b, type: 3}
