@@ -4,49 +4,65 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    //Ememies
-    public GameObject bird1;
-    public GameObject bird2;
-    public GameObject bird3;
-    public GameObject snail1;
-    public GameObject snail2;
-    public GameObject snail3;
-
-    float birdMovementSpeed = 15.0f;
-    float snailMovementSpeed = 10.0f;
+    public Transform[] target;
+    public float speed;
+    public bool toggleSpeedchange = true;
+    bool invokeOnce = false;
 
 
+    private int current;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
-        bird1.transform.position.Set(-40.0f, 21.0f, 6.787284f);
-        //bird2.transform.Translate(birdMovementSpeed * Time.deltaTime, 0, 0);
-        //bird3.transform.Translate(birdMovementSpeed * Time.deltaTime, 0, 0);
-        //snail1.transform.Translate(snailMovementSpeed * Time.deltaTime, 0, 0);
-        //snail2.transform.Translate(snailMovementSpeed * Time.deltaTime, 0, 0);
-        //snail3.transform.Translate(snailMovementSpeed * Time.deltaTime, 0, 0);
-        if (bird1.transform.position.x >= 11 && bird1.transform.position.y >= 21) { }
+        if (transform.position != target[current].position)
         {
-            bird1.transform.Translate(0, -birdMovementSpeed * Time.deltaTime, 0);
+            Vector2 pos = Vector2.MoveTowards(transform.position, target[current].position, speed * Time.deltaTime);
+            GetComponent<Rigidbody2D>().MovePosition(pos);
         }
-        if (bird1.transform.position.x >= 11 && bird1.transform.position.y <= 20) { }
+        else
         {
-            bird1.transform.Translate(-birdMovementSpeed * Time.deltaTime, 0, 0);
+            if(gameObject.tag == "Bird")
+            {
+                current = (current + Random.Range(0, 4)) % target.Length;
+            }
+            else current = (current + 1) % target.Length;
+
         }
-        if (bird1.transform.position.x <= -40 && bird1.transform.position.y <= 20) { }
+
+        if (toggleSpeedchange == true)
         {
-            bird1.transform.Translate(0, birdMovementSpeed * Time.deltaTime, 0);
+            if (!invokeOnce)
+            {
+                StartCoroutine("cycleSpeed");
+                invokeOnce = true;
+            }
+
         }
-        if (bird1.transform.position.x >= -40 && bird1.transform.position.y >= 21) { }
+        else
         {
-            bird1.transform.Translate(birdMovementSpeed * Time.deltaTime, 0, 0);
+            if (invokeOnce)
+            {
+                StopCoroutine("cycleSpeed");
+                invokeOnce = false;
+            }
         }
+    }
+
+    IEnumerator cycleSpeed()
+    {
+       
+        yield return new WaitForSeconds(3f);
+
+        while (toggleSpeedchange)
+        {
+            speed += 10;
+            yield return new WaitForSeconds(3f);
+            speed -= 10;
+            yield return new WaitForSeconds(3f);
+        }
+
+
     }
 }

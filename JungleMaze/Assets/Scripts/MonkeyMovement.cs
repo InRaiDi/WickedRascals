@@ -9,7 +9,7 @@ public class MonkeyMovement : MonoBehaviour
     Rigidbody2D monkey;
 
     //speed
-    float movementSpeed = 10.0f;
+    public float movementSpeed = 50.0f;
     bool rotation = false;
 
     // Start is called before the first frame update
