@@ -7,7 +7,9 @@ public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager instance;
     public TextMeshProUGUI text;
+    
     public Transform spawnPoint;
+    public Transform openDoorState;
     int score;
     int health = 2;
     // Start is called before the first frame update
@@ -17,6 +19,7 @@ public class ScoreManager : MonoBehaviour
         {
             instance = this;
         }
+        
     }
 
    
@@ -25,6 +28,11 @@ public class ScoreManager : MonoBehaviour
         Debug.Log(score);
         score += coinValue;
         text.text = "X" + score.ToString();
+        if (score == 10)
+        {
+            GameObject exitDoor = GameObject.Find("ExitDoor");
+            exitDoor.transform.position = openDoorState.position;
+        }
     }
 
     public void decreaseHealth()
@@ -37,6 +45,7 @@ public class ScoreManager : MonoBehaviour
             monkey.transform.position = spawnPoint.position;
         }
     }
- 
+
+
 
 }

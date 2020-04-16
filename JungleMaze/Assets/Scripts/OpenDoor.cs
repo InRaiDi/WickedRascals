@@ -16,6 +16,7 @@ public class OpenDoor : MonoBehaviour
 
     GameObject door1;
     GameObject door2;
+    
 
     void Start()
     {

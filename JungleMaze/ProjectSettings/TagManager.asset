@@ -13,6 +13,7 @@ TagManager:
   - Lever1
   - Lever2
   - Door2
+  - ExitDoor
   layers:
   - Default
   - TransparentFX
