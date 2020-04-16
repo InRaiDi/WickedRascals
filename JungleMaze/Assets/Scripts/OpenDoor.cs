@@ -52,6 +52,7 @@ public class OpenDoor : MonoBehaviour
 
     }
 
+    //after lever is collided, set lever hit boolean true and flip the lever 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Lever1"))
@@ -66,14 +67,12 @@ public class OpenDoor : MonoBehaviour
         }
 
         if (other.gameObject.CompareTag("Lever2"))
-        
         {
             lever2 = true;
             SpriteRenderer sr = other.GetComponent<SpriteRenderer>();
             sr.flipY = true;
             //var door2 = GameObject.Find("Door2");
             //door2.transform.position = new Vector2(26.86f, -27.79f);
-
         }
     }
 }
