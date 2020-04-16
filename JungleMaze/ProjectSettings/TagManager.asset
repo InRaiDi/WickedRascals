@@ -9,6 +9,10 @@ TagManager:
   - Bird
   - Snail
   - Path
+  - Door1
+  - Lever1
+  - Lever2
+  - Door2
   layers:
   - Default
   - TransparentFX

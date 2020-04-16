@@ -11,7 +11,7 @@ public class ScoreManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       if(instance==null)
+        if (instance == null)
         {
             instance = this;
         }
@@ -24,4 +24,6 @@ public class ScoreManager : MonoBehaviour
         score += coinValue;
         text.text = "X" + score.ToString();
     }
+ 
+
 }
