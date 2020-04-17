@@ -28,7 +28,7 @@ public class ScoreManager : MonoBehaviour
         Debug.Log(score);
         score += coinValue;
         text.text = "X" + score.ToString();
-        if (score == 10)
+        if (score == 18)
         {
             GameObject exitDoor = GameObject.Find("ExitDoor");
             exitDoor.transform.position = openDoorState.position;
