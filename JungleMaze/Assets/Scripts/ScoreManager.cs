@@ -11,7 +11,7 @@ public class ScoreManager : MonoBehaviour
     public Transform spawnPoint;
     public Transform openDoorState;
     int score;
-    int health = 2;
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -35,17 +35,7 @@ public class ScoreManager : MonoBehaviour
         }
     }
 
-    public void decreaseHealth()
-    {
-        health--;
-
-        if(health <= 0)
-        {
-            GameObject monkey = GameObject.Find("Sylvester");
-            monkey.transform.position = spawnPoint.position;
-        }
-    }
-
+   
 
 
 }

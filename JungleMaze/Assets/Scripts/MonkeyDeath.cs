@@ -7,6 +7,7 @@ public class MonkeyDeath : MonoBehaviour
 
     public Transform spawnPoint;
     int scoreZero;
+    int health = 3;
 
     //void OnTriggerEnter2D(Collision2D other)
     //{
@@ -25,11 +26,21 @@ public class MonkeyDeath : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         
+        
+        
         if (other.CompareTag("Player"))
         {
+
+            decreaseHealth(1);
             other.transform.position = spawnPoint.position;
             
         }
         
     }
+
+    public void decreaseHealth(int hp)
+    {
+        health=health-hp;
+    }
+
 }
