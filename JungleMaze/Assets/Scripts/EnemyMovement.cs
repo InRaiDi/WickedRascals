@@ -4,18 +4,28 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
+    //array to keep path target points
     public Transform[] target;
-    public float speed;
+    float speed;
     public bool toggleSpeedchange = true;
     bool invokeOnce = false;
 
 
     private int current;
 
+    void Start()
+    {
+        if(gameObject.tag == "Bird") {
+            speed = 40.0f;
+        }else{
+            speed = 20.0f;
+        }    
+    }
 
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(speed);
         if (transform.position != target[current].position)
         {
             Vector2 pos = Vector2.MoveTowards(transform.position, target[current].position, speed * Time.deltaTime);
@@ -49,7 +59,7 @@ public class EnemyMovement : MonoBehaviour
             }
         }
     }
-
+    //IEnumerator to creating enemies movement speed change
     IEnumerator cycleSpeed()
     {
        

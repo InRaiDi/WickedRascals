@@ -6,8 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class MonkeyDeath : MonoBehaviour
 {
-
-    public Transform spawnPoint;
     public TextMeshProUGUI text;
     int health = 3;
 

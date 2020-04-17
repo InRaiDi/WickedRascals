@@ -26,6 +26,7 @@ public class OpenDoor : MonoBehaviour
 
     void Update()
     {
+        //rotate door1 if lever1 hit
         if (lever1) {
 
             if (rotateDoor1)
@@ -37,7 +38,7 @@ public class OpenDoor : MonoBehaviour
                 rotateDoor1 = false;
             }
         }
-
+        //rotate door2 if lever2 hit
         if (lever2)
         {
             if (rotateDoor2)
@@ -61,8 +62,6 @@ public class OpenDoor : MonoBehaviour
             lever1 = true;
             SpriteRenderer sr = other.GetComponent<SpriteRenderer>();
             sr.flipY = true;
-            //var door1 = GameObject.Find("Door1");
-            ////door1.transform.position = new Vector2(-23.24f, 3.08f);
 
 
         }
@@ -72,8 +71,6 @@ public class OpenDoor : MonoBehaviour
             lever2 = true;
             SpriteRenderer sr = other.GetComponent<SpriteRenderer>();
             sr.flipY = true;
-            //var door2 = GameObject.Find("Door2");
-            //door2.transform.position = new Vector2(26.86f, -27.79f);
         }
     }
 }

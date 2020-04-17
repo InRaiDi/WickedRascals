@@ -10299,7 +10299,6 @@ MonoBehaviour:
   - {fileID: 1656159417}
   - {fileID: 1631438244}
   - {fileID: 455986152}
-  speed: 15
   toggleSpeedchange: 1
 --- !u!4 &752836903 stripped
 Transform:
@@ -10319,7 +10318,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e4e1b446611c9e4d8cc9b777a5c2ae5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPoint: {fileID: 1335135851}
   text: {fileID: 380204432}
 --- !u!1001 &756432340
 PrefabInstance:
@@ -11572,7 +11570,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e4e1b446611c9e4d8cc9b777a5c2ae5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPoint: {fileID: 0}
   text: {fileID: 380204432}
 --- !u!114 &867198596
 MonoBehaviour:
@@ -14695,7 +14692,6 @@ MonoBehaviour:
   - {fileID: 1983254684}
   - {fileID: 94809553}
   - {fileID: 1918417892}
-  speed: 15
   toggleSpeedchange: 1
 --- !u!4 &1116323153 stripped
 Transform:
@@ -14715,7 +14711,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e4e1b446611c9e4d8cc9b777a5c2ae5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPoint: {fileID: 1335135851}
   text: {fileID: 380204432}
 --- !u!1 &1124332725
 GameObject:
@@ -16689,7 +16684,7 @@ PrefabInstance:
     - target: {fileID: 1685792127, guid: cee92bab2480e734f9cac7c8904d9695, type: 3}
       propertyPath: spawnPoint
       value: 
-      objectReference: {fileID: 1335135851}
+      objectReference: {fileID: 0}
     - target: {fileID: 1685792127, guid: cee92bab2480e734f9cac7c8904d9695, type: 3}
       propertyPath: text
       value: 
@@ -20858,7 +20853,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 74985894, guid: cee92bab2480e734f9cac7c8904d9695, type: 3}
       propertyPath: target.Array.size
-      value: 6
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 74985894, guid: cee92bab2480e734f9cac7c8904d9695, type: 3}
       propertyPath: target.Array.data[0]
@@ -20879,27 +20874,27 @@ PrefabInstance:
     - target: {fileID: 74985894, guid: cee92bab2480e734f9cac7c8904d9695, type: 3}
       propertyPath: target.Array.data[4]
       value: 
-      objectReference: {fileID: 23431066}
+      objectReference: {fileID: 1920787567}
     - target: {fileID: 74985894, guid: cee92bab2480e734f9cac7c8904d9695, type: 3}
       propertyPath: target.Array.data[5]
       value: 
-      objectReference: {fileID: 1305313474}
+      objectReference: {fileID: 1004562266}
     - target: {fileID: 74985894, guid: cee92bab2480e734f9cac7c8904d9695, type: 3}
       propertyPath: target.Array.data[6]
       value: 
-      objectReference: {fileID: 1305313474}
+      objectReference: {fileID: 395537657}
     - target: {fileID: 74985894, guid: cee92bab2480e734f9cac7c8904d9695, type: 3}
       propertyPath: target.Array.data[7]
       value: 
-      objectReference: {fileID: 1305313474}
+      objectReference: {fileID: 1004562266}
     - target: {fileID: 74985894, guid: cee92bab2480e734f9cac7c8904d9695, type: 3}
       propertyPath: target.Array.data[8]
       value: 
-      objectReference: {fileID: 1305313474}
+      objectReference: {fileID: 1920787567}
     - target: {fileID: 74985894, guid: cee92bab2480e734f9cac7c8904d9695, type: 3}
       propertyPath: target.Array.data[9]
       value: 
-      objectReference: {fileID: 1305313474}
+      objectReference: {fileID: 23431066}
     - target: {fileID: 74985894, guid: cee92bab2480e734f9cac7c8904d9695, type: 3}
       propertyPath: target.Array.data[10]
       value: 
@@ -20915,7 +20910,7 @@ PrefabInstance:
     - target: {fileID: 1685792127, guid: cee92bab2480e734f9cac7c8904d9695, type: 3}
       propertyPath: spawnPoint
       value: 
-      objectReference: {fileID: 1335135851}
+      objectReference: {fileID: 0}
     - target: {fileID: 1685792127, guid: cee92bab2480e734f9cac7c8904d9695, type: 3}
       propertyPath: text
       value: 
@@ -28599,7 +28594,6 @@ MonoBehaviour:
   - {fileID: 1769026526}
   - {fileID: 1174929115}
   - {fileID: 1217714181}
-  speed: 15
   toggleSpeedchange: 1
 --- !u!50 &471383769908915996
 Rigidbody2D:
@@ -28666,7 +28660,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e4e1b446611c9e4d8cc9b777a5c2ae5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPoint: {fileID: 1335135851}
   text: {fileID: 380204432}
 --- !u!1001 &1759956570150781896
 PrefabInstance:
@@ -28825,6 +28818,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 428999255, guid: fef625773c3f9404195ed3b21e7180f6, type: 3}
+      propertyPath: movementSpeed
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 428999256, guid: fef625773c3f9404195ed3b21e7180f6, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -29029,7 +29026,7 @@ PrefabInstance:
     - target: {fileID: 1685792127, guid: cee92bab2480e734f9cac7c8904d9695, type: 3}
       propertyPath: spawnPoint
       value: 
-      objectReference: {fileID: 1335135851}
+      objectReference: {fileID: 0}
     - target: {fileID: 1685792127, guid: cee92bab2480e734f9cac7c8904d9695, type: 3}
       propertyPath: text
       value: 

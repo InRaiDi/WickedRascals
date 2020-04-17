@@ -5,8 +5,7 @@ using UnityEngine;
 
 public class MonkeyMovement : MonoBehaviour
 {
-    //The monkey
-    Rigidbody2D monkey;
+   
 
     //speed
     public float movementSpeed = 50.0f;
@@ -15,7 +14,6 @@ public class MonkeyMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        monkey = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame

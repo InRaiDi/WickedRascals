@@ -11,7 +11,10 @@ public class ScoreManager : MonoBehaviour
     public Transform spawnPoint;
     public Transform openDoorState;
     int score;
-   
+    bool rotateExitDoor = false;
+    GameObject exitDoor;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,10 +22,24 @@ public class ScoreManager : MonoBehaviour
         {
             instance = this;
         }
-        
+
+        exitDoor = GameObject.Find("ExitDoor");
     }
 
-   
+    void Update()
+    {
+        //rotate the exit door if collected all bananas
+        if (rotateExitDoor)
+        {
+            exitDoor.transform.Rotate(0, 0, 1, Space.Self);
+        }
+        if (exitDoor.transform.rotation.z >= 0.7f)
+        {
+            rotateExitDoor = false;
+        }
+    }
+
+    //keep noted how many bananas collected
     public void ChangeScore(int coinValue)
     {
         Debug.Log(score);
@@ -30,8 +47,7 @@ public class ScoreManager : MonoBehaviour
         text.text = "X" + score.ToString();
         if (score == 18)
         {
-            GameObject exitDoor = GameObject.Find("ExitDoor");
-            exitDoor.transform.position = openDoorState.position;
+            rotateExitDoor = true;
         }
     }
 
