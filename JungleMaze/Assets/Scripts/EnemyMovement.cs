@@ -16,7 +16,7 @@ public class EnemyMovement : MonoBehaviour
     void Start()
     {
         if(gameObject.tag == "Bird") {
-            speed = 40.0f;
+            speed = 30.0f;
         }else{
             speed = 20.0f;
         }    
