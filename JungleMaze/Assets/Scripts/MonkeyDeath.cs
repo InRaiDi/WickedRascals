@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class MonkeyDeath : MonoBehaviour
 {
 
     public Transform spawnPoint;
+    public TextMeshProUGUI text;
     int scoreZero;
     int health = 3;
 
@@ -31,7 +33,9 @@ public class MonkeyDeath : MonoBehaviour
         if (other.CompareTag("Player"))
         {
 
-            decreaseHealth(1);
+            if (gameObject.tag == "bird") { decreaseHealth(1); }
+            if (gameObject.tag == "snail") { decreaseHealth(2); }
+
             other.transform.position = spawnPoint.position;
             
         }
@@ -41,6 +45,7 @@ public class MonkeyDeath : MonoBehaviour
     public void decreaseHealth(int hp)
     {
         health=health-hp;
+        text.text = "X" + health.ToString();
     }
 
 }
