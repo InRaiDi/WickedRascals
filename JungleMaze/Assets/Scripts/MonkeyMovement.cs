@@ -72,8 +72,7 @@ public class MonkeyMovement : MonoBehaviour
             case "Banana":
                 Destroy(collision.gameObject);
                 break;
-            case "Lever":
-
+            default:
                 break;
         }
     }
