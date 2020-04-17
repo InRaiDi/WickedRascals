@@ -112,10 +112,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 911, y: 544}
-  m_MaxSize: {x: 22006, y: 12044}
+  m_MinSize: {x: 913, y: 544}
+  m_MaxSize: {x: 22008, y: 12044}
   vertical: 0
-  controlID: 5257
+  controlID: 3019
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 544}
   m_MaxSize: {x: 4002, y: 12044}
   vertical: 1
-  controlID: 5258
+  controlID: 3020
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -241,10 +241,10 @@ MonoBehaviour:
     y: 0
     width: 438
     height: 947
-  m_MinSize: {x: 434, y: 272}
-  m_MaxSize: {x: 14004, y: 10022}
+  m_MinSize: {x: 434, y: 250}
+  m_MaxSize: {x: 14004, y: 10000}
   vertical: 0
-  controlID: 5183
+  controlID: 3099
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -558,9 +558,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 32340000
-      m_LastClickedID: 13362
-      m_ExpandedIDs: 4afbffffae340000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 72fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -634,7 +634,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 26330000
     m_LastClickedID: 13094
-    m_ExpandedIDs: ffffffff000000006c2d0000822d00009a2d0000ce2d0000c2310000d8310000
+    m_ExpandedIDs: ffffffff000000006c2d0000822d0000ce2d0000d8310000243a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -662,7 +662,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff000000006c2d0000822d00009a2d0000ce2d0000c2310000d8310000
+    m_ExpandedIDs: ffffffff000000006c2d0000822d0000ce2d0000d8310000243a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -755,4 +755,4 @@ MonoBehaviour:
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 100
+  m_LastVerticalScrollValue: 0
